@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.tablestyle{
+    border:1px solid black;
+    font-family: 'Poppins', sans-serif;
+}
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid black; /* Regular border for cells */
+  border-left-width: 1px; /* Bold border for left side of cells */
+}

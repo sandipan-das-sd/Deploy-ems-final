@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root{
+    --cardbody-width:235px;
+}
+body {
+  
+  background-color: #c2b3b3db;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+}
+@media (min-width: 992px) {
+    .col-lg-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+.card{
+  border-radius:0%;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+}
+.card-footer{
+  display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 800;
+}
+.card-body{
+  color: white;
+}

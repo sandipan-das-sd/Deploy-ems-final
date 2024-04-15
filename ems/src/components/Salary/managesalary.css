@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.tablestyle{
+    border:.5px solid rgba(0, 0, 0, 0.331);
+    font-family: 'Poppins', sans-serif;
+}
