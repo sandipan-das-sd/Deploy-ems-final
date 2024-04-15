@@ -17,7 +17,7 @@ export default function EditDepartment() {
 
   useEffect(() => {
     axios
-      .get(`https://server-ems-seven.vercel.app//editDept/${id}`)
+      .get(`https://ems-server-theta.vercel.app/editDept/${id}`)
       .then((response) => {
         const userData = response.data;
         console.log(userData);

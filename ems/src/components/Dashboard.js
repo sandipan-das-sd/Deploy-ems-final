@@ -13,7 +13,7 @@ const Dashboard = () => {
 
   const fetchDashboardCount = async () => {
     try {
-      const response = await axios.get("https://server-ems-seven.vercel.app//dashboardCount");
+      const response = await axios.get("https://ems-server-theta.vercel.app/dashboardCount");
       console.log(response.data);
       setStaffCount(response.data.staffcount); 
       setDeptCount(response.data.deptcount); 

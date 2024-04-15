@@ -34,7 +34,7 @@ export default function NewDepartment() {
       return; // Prevent further execution of the function
     }
     try {
-      const res = await axios.post("https://server-ems-seven.vercel.app/adddept", formData);
+      const res = await axios.post("https://ems-server-theta.vercel.appadddept", formData);
       if (res.status === 201) {
         setShowSuccessAlert(true);
         setShowErrorAlert(false); // Reset the error alert state

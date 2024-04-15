@@ -8,7 +8,7 @@ export default function Myleave() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("https://server-ems-seven.vercel.app//staffList").then((result) => {
+    axios.get("https://ems-server-theta.vercel.app/staffList").then((result) => {
       setUsers(result.data);
       console.log(result.data);
     });
@@ -137,7 +137,7 @@ export default function Myleave() {
                 <td>{index + 1}</td>
                 <td>{user.user_name}</td>
                 <td>
-                <img src={`https://server-ems-seven.vercel.app//Server/public/StaffPhotos/${user.user_docx}`} 
+                <img src={`https://ems-server-theta.vercel.app/Server/public/StaffPhotos/${user.user_docx}`} 
                   alt="UserPhoto" 
                   height="111px"
                   width="149px"

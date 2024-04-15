@@ -19,7 +19,7 @@ export default function ManageStaff() {
 
   useEffect(() => {
     axios
-      .get(`https://server-ems-seven.vercel.app//editStaff/${id}`)
+      .get(`https://ems-server-theta.vercel.app/editStaff/${id}`)
       .then((response) => {
         setUser(response.data); // Assuming response.data contains the user details
         setLoading(false);

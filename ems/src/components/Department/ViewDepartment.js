@@ -11,7 +11,7 @@ export default function ViewDepartment() {
 
   useEffect(() => {
     axios
-      .get(`https://server-ems-seven.vercel.app//editDept/${id}`)
+      .get(`https://ems-server-theta.vercel.app/editDept/${id}`)
       .then((response) => {
         setDepartment(response.data); // Assuming response.data contains the department details
         setLoading(false);
