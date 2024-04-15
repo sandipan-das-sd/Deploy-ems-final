@@ -36,7 +36,7 @@ app.use(cors({
 }));
 
 app.get('/', (req, res) => {
-    res.json({ "message": "Hello server ..." });
+    res.json({ "message": "Hello server ... Update succesful" });
 });
 
 app.post('/register', (req, res) => {
