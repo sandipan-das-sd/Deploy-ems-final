@@ -35,6 +35,9 @@ app.use(cors({
     allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
+app.get('/', (req, res) => {
+    res.json({ "message": "Hello" });
+});
 
 app.post('/register', (req, res) => {
     const { firstname, lastname, email, password,userType,secretKey } = req.body;
