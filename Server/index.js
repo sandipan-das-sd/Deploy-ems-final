@@ -29,7 +29,7 @@ app.use((req, res, next) => {
 
 //Login and signup Role Based
 app.use(cors({
-    origin: 'https://employeemanegmentfrontend.netlify.app/',
+    origin: 'https://employeemanegmentfrontend.netlify.app',
     methods: ["GET", "POST"],
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"]
