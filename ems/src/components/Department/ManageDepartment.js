@@ -33,7 +33,7 @@ export default function ManageDepartment() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8001/manageDepartment"
+          "https://server-ems-seven.vercel.app//manageDepartment"
         );
         setUser(response.data);
         // setIsAuthenticated(true); // Set isAuthenticated to true when data is fetched successfully
@@ -52,7 +52,7 @@ export default function ManageDepartment() {
 
     if (confirmed) {
       axios
-        .delete("http://localhost:8001/deletedept/" + id)
+        .delete("https://server-ems-seven.vercel.app//deletedept/" + id)
         .then((res) => {
           console.log(res);
           alert("Record Deleted successfully");

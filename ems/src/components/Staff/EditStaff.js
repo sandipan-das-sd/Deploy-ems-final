@@ -33,7 +33,7 @@ export default function EditStaff() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8001/editStaff/${id}`)
+      .get(`https://server-ems-seven.vercel.app//editStaff/${id}`)
       .then((response) => {
         const userData = response.data;
         console.log(userData);
@@ -87,7 +87,7 @@ export default function EditStaff() {
     e.preventDefault();
     // API call to update staff member
     await axios
-      .put(`http://localhost:8001/updateStaffs/${id}`, formData)
+      .put(`https://server-ems-seven.vercel.app//updateStaffs/${id}`, formData)
       .then((res) => {
         console.log(res);
         // Navigate to the staff list page after successful addition

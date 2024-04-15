@@ -15,7 +15,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const response = await axios.post('http://localhost:8001/login', data);
+			const response = await axios.post('https://server-ems-seven.vercel.app//login', data);
 			console.log(response.data);
 			if (response.data.status === "Success") {
 				if (response.data.role === "admin") {

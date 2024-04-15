@@ -21,7 +21,7 @@ export default function StaffList() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8001/staffList")
+      .get("https://server-ems-seven.vercel.app//staffList")
       .then((result) => {
         setUsers(result.data);
         
@@ -38,7 +38,7 @@ export default function StaffList() {
     // If confirmed, proceed with deletion
     if (confirmed) {
       axios
-        .delete("http://localhost:8001/deleteStaff/" + id)
+        .delete("https://server-ems-seven.vercel.app//deleteStaff/" + id)
         .then((res) => {
           console.log(res);
           alert("Record Deleted successfully");
@@ -105,7 +105,7 @@ export default function StaffList() {
                     <td>{user.user_phone}</td>
                     <td>{formatDate(user.user_birthday)}</td>
                     <td>
-                      <img src={`http://localhost:8001/Server/public/StaffPhotos/${user.user_docx}`} 
+                      <img src={`https://server-ems-seven.vercel.app//Server/public/StaffPhotos/${user.user_docx}`} 
                       alt="UserPhoto" 
                       height="111px"
                       width="149px"

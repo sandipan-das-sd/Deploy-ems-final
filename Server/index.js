@@ -29,7 +29,7 @@ app.use((req, res, next) => {
 
 //Login and signup Role Based
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://server-ems-seven.vercel.app/',
     methods: ["GET", "POST"],
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"]

@@ -42,7 +42,7 @@ export default function ApplyLeave() {
       }
       try {
         // API call to add staff member
-        const response = await axios.post("http://localhost:8001/applyLeave", formDataToSend);
+        const response = await axios.post("https://server-ems-seven.vercel.app//applyLeave", formDataToSend);
         if (response.status === 201) {
           // Navigate to the staff list page after successful addition
           alert("Leave applied Succesfully!!! Wait for approval :-)");
