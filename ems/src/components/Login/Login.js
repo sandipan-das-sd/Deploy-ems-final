@@ -15,7 +15,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const response = await axios.post('https://ems-server-theta.vercel.app/login', data);
+			const response = await axios.post('https://deploy-ems-final.onrender.com/login', data);
 			console.log(response.data);
 			if (response.data.status === "Success") {
 				if (response.data.role === "admin") {

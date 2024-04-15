@@ -33,7 +33,7 @@ export default function EditStaff() {
 
   useEffect(() => {
     axios
-      .get(`https://ems-server-theta.vercel.app/editStaff/${id}`)
+      .get(`https://deploy-ems-final.onrender.com/editStaff/${id}`)
       .then((response) => {
         const userData = response.data;
         console.log(userData);
@@ -87,7 +87,7 @@ export default function EditStaff() {
     e.preventDefault();
     // API call to update staff member
     await axios
-      .put(`https://ems-server-theta.vercel.app/updateStaffs/${id}`, formData)
+      .put(`https://deploy-ems-final.onrender.com/updateStaffs/${id}`, formData)
       .then((res) => {
         console.log(res);
         // Navigate to the staff list page after successful addition

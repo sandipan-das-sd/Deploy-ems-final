@@ -37,7 +37,7 @@ const Signup = () => {
         axios.defaults.withCredentials=true;
         try {
             // Include userType in the data object sent to the backend
-            const response = await axios.post('https://ems-server-theta.vercel.app/register', data);
+            const response = await axios.post('https://deploy-ems-final.onrender.com/register', data);
             console.log(response.data);
             alert("Registered successfully");
             history.push('/login');

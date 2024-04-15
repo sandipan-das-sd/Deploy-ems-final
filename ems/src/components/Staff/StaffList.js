@@ -21,7 +21,7 @@ export default function StaffList() {
 
   useEffect(() => {
     axios
-      .get("https://ems-server-theta.vercel.app/staffList")
+      .get("https://deploy-ems-final.onrender.com/staffList")
       .then((result) => {
         setUsers(result.data);
         
@@ -38,7 +38,7 @@ export default function StaffList() {
     // If confirmed, proceed with deletion
     if (confirmed) {
       axios
-        .delete("https://ems-server-theta.vercel.app/deleteStaff/" + id)
+        .delete("https://deploy-ems-final.onrender.com/deleteStaff/" + id)
         .then((res) => {
           console.log(res);
           alert("Record Deleted successfully");
@@ -105,7 +105,7 @@ export default function StaffList() {
                     <td>{user.user_phone}</td>
                     <td>{formatDate(user.user_birthday)}</td>
                     <td>
-                      <img src={`https://ems-server-theta.vercel.app/Server/public/StaffPhotos/${user.user_docx}`} 
+                      <img src={`https://deploy-ems-final.onrender.com/Server/public/StaffPhotos/${user.user_docx}`} 
                       alt="UserPhoto" 
                       height="111px"
                       width="149px"

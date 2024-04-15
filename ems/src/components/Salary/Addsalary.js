@@ -17,7 +17,7 @@ export default function AddSalary() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await axios.get("https://ems-server-theta.vercel.app/staffList");
+        const res = await axios.get("https://deploy-ems-final.onrender.com/staffList");
         setUsers(res.data);
       } catch (err) {
         console.log("Error fetching details", err);
@@ -54,7 +54,7 @@ export default function AddSalary() {
     e.preventDefault();
     if (validateForm()) {
       try {
-        const response = await axios.post("https://ems-server-theta.vercel.app/addSalary", users);
+        const response = await axios.post("https://deploy-ems-final.onrender.com/addSalary", users);
         if (response.status === 201) {
           alert("Salary Added Successfully!!!");
           navigate.push('/manageSalary');

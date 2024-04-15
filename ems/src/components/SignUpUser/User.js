@@ -7,7 +7,7 @@ export default function User() {
   useEffect(() => {
     // Fetch user data based on the stored email
     const userEmail = localStorage.getItem('userEmail');
-    axios.get(`https://ems-server-theta.vercel.app/staffList?user_email=${userEmail}`)
+    axios.get(`https://deploy-ems-final.onrender.com/staffList?user_email=${userEmail}`)
       .then(response => {
         if (response.data && response.data.length > 0) {
           // If user data is found, set it in state

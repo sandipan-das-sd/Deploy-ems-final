@@ -33,7 +33,7 @@ export default function ManageDepartment() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://ems-server-theta.vercel.app/manageDepartment"
+          "https://deploy-ems-final.onrender.com/manageDepartment"
         );
         setUser(response.data);
         // setIsAuthenticated(true); // Set isAuthenticated to true when data is fetched successfully
@@ -52,7 +52,7 @@ export default function ManageDepartment() {
 
     if (confirmed) {
       axios
-        .delete("https://ems-server-theta.vercel.app/deletedept/" + id)
+        .delete("https://deploy-ems-final.onrender.com/deletedept/" + id)
         .then((res) => {
           console.log(res);
           alert("Record Deleted successfully");
